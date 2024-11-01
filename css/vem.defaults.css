@@ -1,0 +1,204 @@
+/*WHAT WHERE WHEN WIDGET*/
+.vem-what-when-where .venue-directions {
+	margin-top: 12px;
+}
+.vem-what-when-where .venue-directions a {
+    padding: 12px 16px;
+    background-color: #cfcfcf;
+    color: #151515;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0px;
+    webkit-border-radius: 0px;
+}
+.vem-what-when-where .venue-directions a:hover {
+    background-color: #666666;
+    color: #ffffff;
+}
+.vem-what-when-where h2 {
+	margin: 24px 0 12px 0;
+}
+.vem-what-when-where .ticket-info {
+    margin: 6px 0;
+}
+.vem-what-when-where .occurrence-wrapper {
+    margin-bottom: 24px;
+}
+.vem-what-when-where .vem-single-event-date-start {
+    font-weight: 600;
+}
+
+/* Replaced h4s in modules with new divs */
+.vem-module .event-detail-title { 
+    font-size: 20px; 
+	font-weight: bold; 
+}
+
+/*VEM SINGLE EVENT PAGE*/
+
+/*Event Thumbnail*/
+.vem-single-event-content .vem-single-event-thumbnail {
+    float: none;
+    margin: 12px 0;
+}
+
+/*Calendar Thumbnail*/
+.vem-single-event-content .vem-calendar-thumbnail {
+	float: right !important;
+	margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+/*Title*/
+@media only screen and (max-width: 767px) {
+.vem-single-event-content .vem-single-event-title {
+    font-weight: bold;
+    font-size: 24px;
+	line-height: 1.2em;
+}
+}
+@media only screen and (min-width: 768px) {
+.vem-single-event-content .vem-single-event-title {
+    font-weight: bold;
+	font-size: 42px;
+	line-height: 1.2em;
+}
+}
+
+/*Run Dates*/
+.vem-single-event-content .vem-different-days {
+    margin: 20px 0;
+}
+
+/*Occurrence Status*/
+.vem-single-event-content .vem-occurrence-status {
+	 margin: 20px 0;
+}
+
+/*Excerpt*/
+.vem-single-event-content .vem-single-event-excerpt {
+    margin: 20px 0;
+}
+.vem-single-event-content .vem-single-event-details {
+    margin: 20px 0;
+}
+
+/*Event Media*/
+.vem-single-event-content .vem-single-event-media {
+    margin: 20px 0;
+}
+
+/*Event Field Sets*/
+.vem-single-event-content .vem-single-event-field-set {
+    margin: 16px 0;
+}
+.vem-single-event-content span.field-set-key {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+/*Occurrence Field: Date and Time*/
+.vem-single-event-content .vem-single-event-date-start {
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+/*Occurrence Field: Address - Google Maps Directons*/
+.vem-single-event-content .venue-directions {
+	margin: 0px;
+}
+
+/*Occurrence Field: Notes*/
+.vem-single-event-content .vem-single-occurrence-note {
+	margin: 20px 0;
+}
+
+/*Occurrence Field: Ticket Price you can add different styles for first and second links if desired, these styles apply to both*/
+.vem-single-event-content .vem-single-event-date-ticket-pricing {
+    margin: 20px 0;	
+}
+
+/*Occurrence Field: Ticket URLs - you can add different styles for first and second links if desired, these styles apply to both*/
+.vem-single-event-content a.purchase-tickets-link {
+    padding: 12px 16px;
+    background-color: #cfcfcf;
+    color: #151515;
+    display: inline-block;
+}
+.vem-single-event-content a.purchase-tickets-link:hover {
+    background-color: #666666;
+    color: #ffffff;
+    text-decoration: none
+}
+.vem-single-event-content .vem-single-event-date-ticket-link {
+    margin: 16px 0;
+}
+
+/*Occurrence Field: Calendar Import*/
+.vem-single-event-content .vem-single-event-date-import-link a.google {
+    background-color: #cfcfcf;
+    padding: 6px 12px;
+    color: #000000;
+    margin-right: 8px;
+}
+.vem-single-event-content vem-single-event-date-import-link a.google:hover {
+    background-color: #666666;
+    color: #ffffff;
+    text-decoration: none;
+}
+.vem-single-event-content .vem-single-event-date-import-link a.ics {
+    background-color: #cfcfcf;
+    padding: 5px 8px;
+    color: #000000;
+    margin-right: 8px;
+}
+.vem-single-event-content .vem-single-event-date-import-link a.ics:hover {
+    background-color: #666666;
+    color: #ffffff;
+    text-decoration: none;
+}
+.vem-single-event-content .vem-single-event-date-import-link {
+    margin: 20px 0;
+}
+.vem-single-event-content .vem-one-occurrence {
+    margin-bottom: 24px;
+}
+
+/* Search */
+.textwidget .vem-search .vem-form-field { margin-bottom:16px; }
+.textwidget .vem-search .vem-form-field label { font-weight:bold; display:block; margin-bottom:4px; }
+.textwidget .vem-search .vem-form-field label + input { margin-bottom:8px; }
+.textwidget .vem-search .vem-form-field input[type=text], .textwidget .vem-search .vem-form-field select { width:100% }
+
+.vem-search .vem-form-field { margin-bottom:16px; }
+.vem-search .vem-form-field label { font-weight:bold; display:block; margin-bottom:4px; }
+.vem-search .vem-form-field label + input { margin-bottom:8px; }
+.vem-search .vem-form-field input[type=text], .vem-search .vem-form-field select { width:100% }
+
+/* Venture Gallery */
+.ui-dialog[aria-describedby="vem-gallery-dialog"] ~ .ui-widget-overlay {
+    background: #000000;
+    opacity: .8;
+}
+.ui-dialog[aria-describedby="vem-gallery-dialog"].ui-widget.ui-widget-content {
+    border: 1px solid #151515;
+    background: #151515;
+}
+.ui-dialog[aria-describedby="vem-gallery-dialog"] .ui-dialog-titlebar {
+    border: 0px solid transparent;
+}
+.ui-dialog[aria-describedby="vem-gallery-dialog"] .ui-dialog-titlebar-close {
+    border-radius: 0px;
+    margin-right: 14px;
+}
+.ui-dialog[aria-describedby="vem-gallery-dialog"] .ui-widget-header {
+    background: #151515;
+    color: #ffffff;
+    font-weight: normal;
+    font-family: inherit;
+    font-size: 90%;
+}
+.ui-dialog[aria-describedby="vem-gallery-dialog"] .ui-button:active {
+    border:1px solid #151515;
+    background-color: #444444;
+}

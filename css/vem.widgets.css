@@ -1,0 +1,38 @@
+/*VENTURE WHAT-WHEN-WHERE WIDGET*/
+.vem-what-when-where a.purchase-tickets-link {
+background-color: transparent;
+display: initial;
+font-weight: normal;
+margin: 0;
+padding: 4px 10px 4px 0;
+}
+.vem-what-when-where a.purchase-tickets-link:hover {
+background-color: none;
+}
+#event-what h2 {
+color: inherit;
+font-size: inherit;
+font-weight: inherit;
+padding-top: inherit;
+font-family: inherit;
+}
+#event-when h2 {
+color: inherit;
+font-size: inherit;
+font-weight: inherit;
+padding-top: inherit;
+font-family: inherit;
+}
+#event-where h2 {
+color: inherit;
+font-size: inherit;
+font-weight: inherit;
+padding-top: inherit;
+font-family: inherit;
+}
+.vem-what-when-where .occurrence-wrapper {
+margin-bottom: 12px;
+}
+.vem-what-when-where .venue-address-wrapper {
+margin-bottom: 12px;
+}

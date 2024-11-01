@@ -1,0 +1,27 @@
+.twocol-one{width:48%;}
+.threecol-one{width:30.66%;}
+.threecol-two{width:65.33%;}
+.fourcol-one{width:22%;}
+.fourcol-two{width:48%;}
+.fourcol-three{width:74%;}
+.fivecol-one{width:16.8%;}
+.fivecol-two{width:37.6%;}
+.fivecol-three{width:58.4%;}
+.fivecol-four{width:78.4%;}
+.sixcol-one{width:13.33%;}
+.sixcol-two{width:30.66%;}
+.sixcol-three{width:47.99%;}
+.sixcol-four{width:65.33%;}
+.sixcol-five{width:82.67%;}
+.twocol-one,.threecol-one,.threecol-two,.fourcol-one,.fourcol-two,.fourcol-three,.fivecol-one,.fivecol-two,.fivecol-three,.fivecol-four,.sixcol-one,.sixcol-two,.sixcol-three,.sixcol-four,.sixcol-five{float:left;margin-right:4%;margin-bottom:4%;position:relative;}
+.last{ clear:right; margin-right:0; margin-bottom:0!important; }
+@media only screen and (max-width: 768px) {
+	.twocol-one,.threecol-one,.threecol-two,.fourcol-one,.fourcol-two,.fourcol-three,.fivecol-one,.fivecol-two,.fivecol-three,.fivecol-four,.sixcol-one,.sixcol-two,.sixcol-three,.sixcol-four,.sixcol-five{margin-right: 0; width: 100% !important;}
+}
+.clear:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}

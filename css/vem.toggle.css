@@ -1,0 +1,39 @@
+.vem-toggle-wrapper p { display: inherit !important; }
+div.vem-toggle-wrapper {
+    background: #cfcfcf;
+    padding: 12px;
+}
+div.vem-toggle-wrapper p {
+    display: none;
+}
+label.vem-toggle {
+    cursor: pointer;
+    display: block;
+}
+label.vem-toggle:after {
+    content: '\25BE';
+}
+input.vem-toggle:checked+label.vem-toggle:after {
+    content: '\25B4';
+}
+input.vem-toggle {
+    display: none;
+}
+div.vem-toggle {
+    padding-top: 12px;
+}
+input.vem-toggle+label.vem-toggle+div.vem-toggle {
+    display: none;
+}
+input.vem-toggle+label.vem-toggle+p+div.vem-toggle {
+    display: none;
+}
+input.vem-toggle:checked+label.vem-toggle+div.vem-toggle {
+    display: block;
+    background-color: #ffffff;
+    padding: 12px;
+    margin-top: 12px;
+}
+input.vem-toggle:checked+label.vem-toggle+p+div.vem-toggle {
+    display: block;
+}

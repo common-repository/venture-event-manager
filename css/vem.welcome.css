@@ -1,0 +1,26 @@
+.welcome-content {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.welcome-section {
+    width: calc(50% - 20px);
+    margin-bottom:40px;
+}
+
+.welcome-section p.action {
+    margin-top:20px;
+}
+
+.welcome-section li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+@media (max-width:736px) {
+    .welcome-section {
+        width: calc(100%);
+        margin-bottom:20px;
+    }
+}

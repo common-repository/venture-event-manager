@@ -1,0 +1,5 @@
+th#archiving, td.archiving, th#event_id, th.event_id { width:4em; }
+td.dates, .one-event-date { white-space: nowrap; overflow-x:hidden; }
+@media screen-only and (max-width: 1023px) {
+    th#event_categories, td.event_categories { display: none; }
+}

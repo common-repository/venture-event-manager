@@ -1,0 +1,479 @@
+.vem-calendar { 
+	width:100%; 
+	margin-bottom:20px; 
+	clear:both; 
+}
+.vem-calendar .vem-header { 
+	width:100%; 
+	outline:1px solid #CFCFCF; 
+	padding:2px 0; 
+}
+.vem-calendar .vem-header-nav-prev { 
+	float:left; 
+	margin-left:4px; 
+}
+.vem-calendar .vem-header-month { 
+	text-align:center; 
+}
+.vem-calendar .vem-header-nav-next { 
+	float:right; 
+	margin-right:4px; 
+}
+.vem-calendar .vem-daylabels { 
+	clear:both; 
+}
+.vem-calendar .vem-daylabel { 
+	width:14.2857%; 
+	float:left; 
+	text-align: center; 
+	outline:1px solid #CFCFCF; 
+	padding:2px 0; 
+}
+.vem-calendar .vem-calendar-end { 
+	clear:both; 
+	height:0 !important; 
+}
+.vem-calendar .vem-days { 
+	clear:both; 
+	position:relative; 
+	overflow-y: hidden; 
+	padding-top:5px; 
+	padding-bottom:5px; 
+}
+.vem-calendar .vem-day { 
+	width:14.2857%; 
+	min-height:124px; 
+	float:left; 
+	text-align: center; 
+	outline:1px solid #CFCFCF; 
+	padding:2px 0; 
+	position: relative; 
+}
+.vem-calendar .vem-day-number { 
+	font-size:100%; 
+	text-align:right; 
+	padding:0 4px; 
+}
+.vem-calendar .vem-day-number.as-text { 
+	font-size:70%; 
+    text-align:left; 
+}
+.vem-calendar .vem-day.current-date { 
+	/*background-color:#CFCFCF !important;*/ 
+}
+.vem-calendar .vem-day.current-date .vem-day-number.as-number {
+    background-color: #428BCA !important;
+    color: #ffffff;
+}
+.vem-calendar .vem-single-event { 
+	font-size:75%; 
+	text-align:left; 
+	padding: 2px 8px 4px 4px;
+	line-height:1em; 
+	margin-bottom:2px; 
+	cursor:pointer; 
+}
+.vem-calendar .vem-day .vem-single-event.vem-lightness-dark img.term-image {
+  filter:invert(100%);
+}
+.vem-listing .vem-calendar .vem-single-event-title, .vem-calendar .vem-single-event-title {
+  font-weight: bold;
+  font-size:14px;
+}
+.vem-calendar .vem-single-event-tickets {
+	margin-top: 4px;
+}
+
+/*STACKING CALENDAR STYLES*/
+.vem-calendar.stacking .vem-daylabels { 
+	display:none; 
+}
+.vem-calendar.stacking .vem-day { 
+	width:100%; 
+} 
+.vem-calendar.stacking .vem-day { 
+	display:none; 
+}
+.vem-calendar.stacking .vem-day.has-events { 
+	display:block; 
+	height:auto !important; 
+}
+.vem-calendar.stacking .vem-day-number.as-number { 
+	display:none; 
+}
+.vem-calendar .vem-day-number.as-text { 
+	display:none; 
+}
+.vem-calendar.stacking .vem-day-number.as-text { 
+	display:block; 
+}
+.vem-calendar .vem-day-number.as-number { 
+	display:block; 
+}
+
+ul.vem-calendar-key { 
+	list-style: none; 
+	padding:0; 
+	margin:0; }
+ul.vem-calendar-key li { 
+	list-style: none; 
+}
+
+/*VEM CALENDAR*/
+.vem-calendar {
+	font-family: sans-serif;
+}
+.vem-calendar .vem-header {
+	outline: none;
+	padding: 10px 0;
+}
+.vem-calendar .vem-header-month {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.vem-calendar .vem-single-event {
+	margin-bottom: 4px;
+	border-left: 3px solid rgba(0,0,0,.4);
+	line-height: 1.2em;
+}
+.vem-calendar .vem-single-event.filtered {
+  opacity: 0.2;
+}
+.vem-calendar .vem-day {
+	background-color: #F2F2F2;
+	outline: 5px solid #FFFFFF;
+}
+.vem-calendar .vem-daylabel {
+	outline: none;
+	padding: 5px 0;
+	background-color: rgba(0,0,0,.1);
+  text-transform: uppercase;
+}
+.vem-calendar .vem-day-number.as-number {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  padding: 0 6px;
+	background-color: #E5E5E5;
+	margin-bottom: 4px;
+}
+
+/*VEM CALENDAR STACKING*/
+.vem-calendar.stacking .vem-day-number.as-text {
+	font-size: 18px;
+	padding: 8px;
+}
+.vem-calendar.stacking .vem-single-event {
+	margin-bottom: 4px;
+	padding: 5px;
+}
+@media only screen and (min-width: 667px) {
+ul.vem-calendar-key { 
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+	-moz-column-count: 3; /* Firefox */
+	column-count: 3;
+}
+}
+@media only screen and (min-width: 667px) {
+ul.vem-calendar-key li {
+	display: block;
+}
+}
+
+.vem-single-event-thumbnail a img {
+    width: 100%;
+}
+
+/* Panel version basics */
+.vem-calendar[vem-click-action="panel"] .vem-daylabel {
+	font-size: 15px;
+}
+.vem-calendar[vem-click-action="panel"] .vem-day {
+    min-height: 12px;
+    height: 50px;
+    margin-top: 0;
+}
+.vem-calendar[vem-click-action="panel"] .vem-day .vem-day-number {
+    width: calc(100% - 5px);
+    text-align: center ;
+    font-size: 15px ;
+    padding: 0 ;
+	background-color: transparent;
+}
+.vem-calendar[vem-click-action="panel"] .vem-header {
+    width: 100% ;
+}
+.vem-calendar[vem-click-action="panel"] .vem-day {
+    cursor: default ;
+}
+.vem-calendar[vem-click-action="panel"] .vem-day.has-events {
+    cursor: pointer ;
+}
+.vem-calendar[vem-click-action="panel"] .vem-single-event-thumbnail {
+    width: 72px ;
+}
+.vem-calendar[vem-click-action="panel"] .vem-single-event div {
+    display: none ;
+}
+.vem-calendar[vem-click-action="panel"] .vem-day-content {
+    text-align: center ;
+    margin: 0 auto ;
+    vertical-align: top ;
+    height: 5px ;
+    font-size: 0 ;
+}
+.vem-calendar[vem-click-action="panel"] .vem-single-event {
+    height: 5px;
+    width: 5px;
+    border: none;
+    padding: 0;
+    margin: 2px;
+    float: none;
+    display: inline-block;
+    background-color:#333;
+}
+.vem-calendar[vem-click-action="panel"] .vem-detail-panel {
+    clear: both;
+}
+.vem-calendar[vem-click-action="panel"] .vem-detail-panel .vem-one-occurrence {
+	padding:8px 0;
+	border-bottom:3px solid #999;
+}
+.vem-calendar[vem-click-action="panel"] .vem-detail-panel .vem-one-occurrence:last-child {
+    border-bottom:none;
+}
+.vem-calendar[vem-click-action="panel"] .vem-day.has-events.panel-open {
+    background-color:#CFCFCF;
+}
+
+/*SPINNER*/
+.vem-calendar .vem-days.loading,.vem-calendar .vem-days.no-events {
+  min-height:200px;
+}
+.vem-calendar .vem-days.loading:after, .vem-calendar .vem-days.no-events:after {
+    display:block;
+    position:absolute;
+    background-color: rgba(0,0,0,0.75);
+    width:100%;
+    height: 100%;
+    content:"";
+    clear: both;
+}
+.vem-calendar .vem-days .venture-spinner {
+    display:none !important;
+}
+.vem-calendar .vem-days.loading .venture-spinner {
+    display:block !important;
+    position:absolute;
+    z-index:1000;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.vem-calendar .vem-days .vem-no-events {
+    display:none !important;
+}
+.vem-calendar .vem-days.no-events .vem-no-events {
+    display:block !important;
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;    
+}
+.venture-spinner {
+  background: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+@-webkit-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-o-keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes uil-spin-css {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0.1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.venture-spinner > div {
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
+  margin-top: 4px;
+  position: absolute;
+}
+.venture-spinner > div > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background: #ffffff;
+}
+.venture-spinner > div:nth-of-type(1) > div {
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -webkit-animation-delay: -0.87s;
+  animation-delay: -0.87s;
+}
+.venture-spinner > div:nth-of-type(1) {
+  -webkit-transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
+}
+.venture-spinner > div:nth-of-type(2) > div {
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -webkit-animation-delay: -0.75s;
+  animation-delay: -0.75s;
+}
+.venture-spinner > div:nth-of-type(2) {
+  -webkit-transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
+}
+.venture-spinner > div:nth-of-type(3) > div {
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -webkit-animation-delay: -0.62s;
+  animation-delay: -0.62s;
+}
+.venture-spinner > div:nth-of-type(3) {
+  -webkit-transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
+}
+.venture-spinner > div:nth-of-type(4) > div {
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.venture-spinner > div:nth-of-type(4) {
+  -webkit-transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
+}
+.venture-spinner > div:nth-of-type(5) > div {
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -webkit-animation-delay: -0.37s;
+  animation-delay: -0.37s;
+}
+.venture-spinner > div:nth-of-type(5) {
+  -webkit-transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
+}
+.venture-spinner > div:nth-of-type(6) > div {
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -webkit-animation-delay: -0.25s;
+  animation-delay: -0.25s;
+}
+.venture-spinner > div:nth-of-type(6) {
+  -webkit-transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
+}
+.venture-spinner > div:nth-of-type(7) > div {
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -webkit-animation-delay: -0.12s;
+  animation-delay: -0.12s;
+}
+.venture-spinner > div:nth-of-type(7) {
+  -webkit-transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
+}
+.venture-spinner > div:nth-of-type(8) > div {
+  -webkit-animation: uil-spin-css 1s linear infinite;
+  animation: uil-spin-css 1s linear infinite;
+  -webkit-animation-delay: -0s;
+  animation-delay: -0s;
+}
+.venture-spinner > div:nth-of-type(8) {
+  -webkit-transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+  transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
+}
+
+/* OCCURRENCE CATEGORIES */
+.vem-occurrence-category-filters .date-term-filter-all,
+.vem-occurrence-category-filters .one-date-term-filter,
+.vem-calendar .vem-day .one-date-term,
+.vem-detail-panel.vem-single-event-dialog .one-date-term,
+.vem-calendar-dialog .one-date-term {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.vem-occurrence-category-filters .date-term-filter-all,
+.vem-occurrence-category-filters .one-date-term-filter {
+  font-size:80%;
+  padding:4px 8px;
+  cursor:pointer;
+  margin-bottom: 8px;
+}
+
+.vem-occurrence-category-filters .date-term-filter-all.active,
+.vem-occurrence-category-filters .one-date-term-filter.active {
+  background: #A50064;
+}
+
+.vem-occurrence-category-filters .one-date-term-filter img,
+.vem-calendar .vem-day .one-date-term img,
+.vem-detail-panel.vem-single-event-dialog .one-date-term img,
+.vem-calendar-dialog .one-date-term img {
+  height: 12px;
+  width: auto;
+  margin-right: 4px;
+}

@@ -1,0 +1,208 @@
+/*EVENT LISTING*/
+
+/*Event Thumbnail*/
+@media only screen and (max-width: 767px) {
+.vem-listing .vem-single-event-thumbnail {
+    float: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+.vem-listing .vem-single-event-thumbnail, .vem-listing .vem-full-image, .vem-listing .vem-large-image, .vem-listing .vem-medium-image {
+    float: right;
+	width: 33%;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+}
+@media only screen and (max-width: 767px) {
+.vem-listing .vem-single-event-thumbnail, .vem-listing .vem-full-image, .vem-listing .vem-large-image, .vem-listing .vem-medium-image {
+    float: none;
+	width: 100%;
+    margin-bottom: 12px;
+}
+}
+
+/*Calendar Thumbnail*/
+.vem-listing .vem-calendar-thumbnail {
+	float: right;
+	margin-left: 12px;
+    margin-bottom: 12px;
+}
+
+/*Title*/
+@media only screen and (max-width: 767px) {
+.vem-listing .vem-single-event-title {
+    font-weight: bold;
+    font-size: 24px;
+	line-height: 1.2em;
+}
+}
+@media only screen and (min-width: 768px) {
+.vem-listing .vem-single-event-title {
+    font-weight: bold;
+	font-size: 42px;
+	line-height: 1.2em;
+}
+}
+
+/*Run Dates*/
+.vem-listing .vem-different-days {
+    margin: 20px 0;
+}
+
+/*Occurrence Status*/
+.vem-listing .vem-occurrence-status {
+	 margin: 20px 0;
+}
+
+/*Excerpt*/
+.vem-listing .vem-single-event-excerpt {
+    margin: 20px 0;
+}
+.vem-listing .vem-single-event-details {
+    margin: 20px 0;
+}
+
+/*Event Media*/
+.vem-listing .vem-single-event-media {
+    margin: 20px 0;
+}
+
+/*Event Field Sets*/
+.vem-listing .vem-single-event-field-set {
+    margin: 16px 0;
+}
+.vem-listing span.field-set-key {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+/*Occurrence Field: Date and Time*/
+.vem-listing .vem-single-event-date-start {
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+/*Occurrence Field: Address - Google Maps Directons*/
+.vem-listing .venue-directions {
+	margin: 0px;
+}
+
+/*Occurrence Field: Notes*/
+.vem-listing .vem-single-occurrence-note {
+	margin: 20px 0;
+}
+
+/*Occurrence Field: Ticket Price you can add different styles for first and second links if desired, these styles apply to both*/
+.vem-listing .vem-single-event-date-ticket-pricing {
+    margin: 20px 0;	
+}
+
+/*Occurrence Field: Ticket URLs - you can add different styles for first and second links if desired, these styles apply to both*/
+.vem-listing a.purchase-tickets-link {
+    padding: 12px 16px;
+    background-color: #cfcfcf;
+    color: #151515;
+    display: inline-block;
+}
+.vem-listing a.purchase-tickets-link:hover {
+    background-color: #666666;
+    color: #ffffff;
+    text-decoration: none
+}
+.vem-listing .vem-single-event-date-ticket-link {
+    margin: 16px 0;
+}
+
+/*Occurrence Field: Calendar Import*/
+.vem-single-event-date-import-link a.google {
+    background-color: #cfcfcf;
+    padding: 6px 12px;
+    color: #000000;
+    margin-right: 8px;
+}
+.vem-single-event-date-import-link a.google:hover {
+    background-color: #666666;
+    color: #ffffff;
+    text-decoration: none;
+}
+.vem-single-event-date-import-link a.ics {
+    background-color: #cfcfcf;
+    padding: 5px 8px;
+    color: #000000;
+    margin-right: 8px;
+}
+.vem-single-event-date-import-link a.ics:hover {
+    background-color: #666666;
+    color: #ffffff;
+    text-decoration: none;
+}
+.vem-listing .vem-single-event-date-import-link {
+    margin: 20px 0;
+}
+.vem-listing .vem-one-occurrence {
+    margin-bottom: 24px;
+}
+
+/*Event Listing More Details Link*/
+.vem-listing .vem-more-details {
+    margin: 20px 0;
+}
+
+/*Listing Event Divider*/
+.vem-listing .vem-single-event:after {
+    content: '';
+    display: block;
+    clear: both;
+	margin: 6% 0;
+    border-bottom: 1px dashed #CFCFCF;
+}
+
+/*Listing Pagination*/
+a.vem-page-first, a.vem-page-prev, a.vem-page-next, a.vem-page-last {
+    padding: 12px;
+    margin-right: 8px;
+    background-color: #cfcfcf;
+    color: inherit;
+    width: 48px;
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-align: center;
+}
+a.vem-page-first:hover, a.vem-page-prev:hover, a.vem-page-next:hover, a.vem-page-last:hover {
+    background-color: #666666;
+    color: #ffffff;
+}
+
+/*WIDGET LISTING STYLES*/
+.widget .vem-single-event-title {
+    font-size: 24px;
+}
+.widget .vem-calendar-thumbnail {
+    max-width: 120px;
+}
+.widget .vem-single-event-date-start {
+    margin: 10px 0;
+}
+.widget .vem-single-event-date-ticket-link {
+	 margin: 10px 0;
+}
+.widget .vem-occurrence-status {
+	margin: 10px 0;
+}
+.widget .vem-single-event-field-set {
+	margin: 10px 0;
+}
+
+/* OCCURRENCE CATEGORIES */
+.vem-single-occurrence-categories .one-date-term {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.vem-single-occurrence-categories .one-date-term img {
+    height: 12px;
+    width: auto;
+    margin-right: 4px;
+}

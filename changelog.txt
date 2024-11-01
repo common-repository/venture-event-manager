@@ -1,0 +1,166 @@
+Venture Event Manager
+Learn more at ventureeventmanager.com
+
+v3.3.0
+======
+Remove Titan Framework
+
+v3.2.4
+======
+Allow custom fields UI on transcript post type
+Update color picker dependency in Titan
+Fix two hard-coded "wp_" database table prefix
+Fixes on occurrence editor after WP5.5 upgrade breaks toggling
+
+v3.2.3
+======
+Fix regression bug: Venues were not saving
+
+v3.2.2
+======
+Change how URL is determined in ICS fields
+Fix: Under some circumstances, a superfluous tab character breaks ICS fields
+Improve timezone interactions in Google Structured Data (GSD)
+Add support for better templating (replaces HEREDOC blocks in PHP code)
+Add support for new GSD event statuses
+Add layout chunk for event status from GSD setting
+Suppress venue name and address display when GSD event status has been set to Moved Online
+Reformat/reorganize occurrence editor (on event editor page)
+Apply some style improvements in occurrence editor
+
+v3.2.1
+======
+Fix: Occurrence filters are now retained when calendar month changes
+Add support for new post type, Event Transcripts
+An event transcript can be selected for an event on the event editor
+New "chunk" in layouts for event transcript button
+
+v3.2.0
+======
+Add support for password protected posts
+Add support for shortcodes inside the toggler
+Add occurrence categories, with new database table, and the UI to create and assign them
+Occurrence categories are returned as a standard field in date queries
+Occurrence categories can have images
+Occurrence categories have a "chunk" that can be added to layouts
+Listings and calendars can be filtered by occurrence categories
+Occurrence categories are now displayed on calendars, popups, and panels
+Occurrence categories can be used as a dynamic filter on calendars
+Add some additional classes to calendar days to support more styling options when filtering
+The dark/light calculation for category colors is included as "lightness" and sent to calendars
+By default, occurrence category images are inverted via CSS when on dark backgrounds
+Fix a problem with display order on some grouped-occurrence listings
+Include ticket pricing in the data sent to calendars
+Include ticket pricing in the display of calendar popups and panels, but hide it via CSS by default
+Add a global option to enable a basic masonry style to galleries with simple lightbox image popups
+Provide basic styling for gallery popups using the VEM option above
+Add occurrence category to list of available taxonomy search criteria (VEM Pro v1.0.6)
+
+v3.1.6
+======
+Fix a bug that meant all grouped occurrence listings would display in ascending order
+Add the VEM object to argument list for chunk filters
+Add author support to events
+Rework how taxonomy filters are applied to allow other plugins to rewrite them if needed
+Add support for excluding events from searches by list of IDs
+Send VEM object to keyword search column filters
+
+v3.1.5
+======
+Add mechanism to display notices when upgrades might require an extra step
+Add instructions to deactivate and reactivate VEM after upgrade to v3.1.4+
+
+v3.1.4
+======
+Our custom post types now use distinct capabilities so that other plugins can differentiate between (for example) events and posts
+Add single event calendar event chunk (allows for placing a calendar for just that event into layouts)
+Fix a regression error on start dates for regular calendars
+Store last viewed dates for single event calendars to be unique by event
+Move getSingleMeta function to be a static utility function, so usable everywhere
+Add a number of new useful filters and actions to improve overall extensibility
+Add support for plugins to be able to customize calendar content via Javascript functions
+Event order by now only considers future dates when listing is set to upcoming events only
+Event order by now has a secondary support of event title
+Calendar and listing IDs can now be stored for context in VEM object
+Send the VEM object to filters for date and event where clauses
+Set the listing ID when we are in a listing shortcode
+Add autocomplete="off" for date search fields
+Add support for using native datepickers on mobile devices (off by default, but can be set in options)
+Force venue address meta selects to only get the first value (should be true anyway)
+
+v3.1.3
+======
+Add an existence check in a Titan javascript file to avoid breaking JS call when Gravity Forms export is in no-conflict mode
+Add a filter on the ICS occurrence so custom plugins can modify the data that gets displayed
+
+v3.1.2
+======
+Add filters for just specific chunks in addition to general filter
+Adjust some styles so that loading spinner for calendars works in stacked mode
+Improved styling for drag-n-drop modules for layouts
+Add support for custom layouts for single events when Pro component is active
+Improved styling and UI for field sets, now also in separate metaboxes
+Updates to support columnar views of event listings
+Add date only and time only format overrides in event listings
+Add some better support in date/time formatting for other options
+
+v3.1.1
+======
+Event occurrences now are deleted when the event itself is deleted permanently
+When a post is published or the publication date is changed, date records are updated to use the new publication date as create time
+Dates added after event publication use their own creation date unless publication date is changed
+Add filterable max of 6 event dates to show on admin panel
+Upgrade to FontAwesome v5.2
+Rework UI for field sets
+Fix bug that would break event listings if Pro version not installed
+
+v3.1.0
+======
+Fix bug in embedded Titan Framework that was erasing all option data for posts when saving in quick save or bulk edit
+Hide preview buttons on event, listing, and calendar, including Visual Composer preview if that's enabled (previews don't play nice with metadata saves)
+Event keyword search now searchs event details, too
+Event keyword search now includes a filter to allow other plugins to add additional searchable fields
+Event listings and calendars can now have a custom class assigned to the wrapper div for more flexible styling rules
+Single occurrence divs now include additional classes based on event category slugs
+Calendar data JSON now includes similar classes based on event category slugs
+Calendar display includes those category classes
+Fix bug that menu saves were throwing warnings because post_type is not in the $_POST array 
+Added support for Pro media type taxonomy feature to allow it to be used as a filter for event listings and calendars
+
+v3.0.9
+======
+Fix a bug where date-based searches ignored the start date in search and just found all events before the search end date
+Fix a bug that was sending both the old and new versions of include in archives where clauses in some searches (only affects Pro)
+
+v3.0.8
+======
+Changes to calendar CSS to have far less defined as !important
+Add some support for expanded archive options (relevant only to Pro users)
+Better styling for the event list in the admin panel
+Remove reliance on global $post in saving event metadata
+Fix to embedded Titan that was causing event quick edit to fail
+Fix a bug related to a misnamed variable
+Fix a bug where uncategorized events would have the title "null" in calendar popups
+Fix a couple places where layout chunks would output an empty div instead of nothing when there was no value
+Events with a calendar background color of transparent by default now use #cfcfcf as the background color for popups
+
+v3.0.7
+======
+Rename functions that started with double underscore, as that is now reserved in PHP7 (hat tip: Alicia Mejia)
+Added better compatibility checking against PHP v7+ to deliver a helpful message instead of a lousy fatal error
+
+v3.0.6
+======
+Bug fix: Fix filter that was making event titles not show when embedded via shortcode on other pages (like Venture Teams team member)
+
+v3.0.5
+======
+Bug fix: Events with multiple event categories were failing to retrieve proper color information
+
+v3.0.4
+======
+Bug fix: Calendars were not recognizing the top category for display color selections
+
+v3.0.3
+======
+Initial public release

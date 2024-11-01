@@ -1,0 +1,15 @@
+#venture-vc-controller {
+    width:100%; padding:4px 6px; background-color:#fdfdfd; border: 2px solid #114C7F; box-sizing: border-box;
+}
+#venture-vc-controller .actions {
+    display:flex; justify-content: space-between;
+}
+#venture-vc-controller .one-action {
+    margin-bottom:12px; width: 49%;
+}
+#venture-vc-controller .one-action button {
+    width:100px; margin-left:10px;
+}
+#venture-vc-controller .one-action select {
+    width:calc(100% - 128px); margin-left:10px;
+}

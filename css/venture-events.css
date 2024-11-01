@@ -1,0 +1,69 @@
+table.vem-dates, table.vem-end-time-display { width:100%; }
+.vem-dates-note, .vem-dates-ticket_url, .vem-dates-ticket2_url { width:100%; }
+table.vem-dates td:nth-child(1), table.vem-end-time-display td:nth-child(1) { width:175px; }
+
+.set-display { padding: 6px 0; margin-top:-16px; }
+.one-field { display:flex; justify-content: space-between; padding:8px 16px 8px 8px; margin:8px 0; border: none; background-color: #f1f1f1; }
+.one-field .deleter-icon { color: #151515; padding:6px 6px 0 0; }
+.one-field .move-icon { color: #151515; padding:6px 0 0 6px; cursor: move; }
+.one-field .field-input { width: calc(50% - 40px); }
+.one-field .field-input input { width:100%; }
+
+#_vem_010_display_dates_meta_box .inside { background-color:#f1f1f1; margin-top:0px; padding:6px; }
+.vem-one-occurrence { background:white; border:1px solid #e5e5e5; margin:0 0 8px 0; }
+.vem-one-occurrence .vem-toggle-button { float:right; text-align:center; color: #72777c; width: 36px; height: 36px; margin: 0; padding: 0; border: 0; background: 0 0; cursor: pointer; }
+.vem-one-occurrence .vem-header-bar { font-size:14px; padding:8px 12px; margin:0; line-height:1.4; border-bottom:1px solid #eee; border-left:2px solid #666; }
+.vem-one-occurrence.open .vem-header-bar { border-left-width: 4px; }
+.vem-one-occurrence .vem-form { padding:0px 16px 20px 16px; }
+.vem-one-occurrence .vem-form-wrapper h3 { margin-bottom:4px; }
+.vem-one-occurrence .vem-form:after, .vem-one-occurrence .vem-form-wrapper:after { content:""; display:table; clear:both; }
+.vem-one-occurrence .vem-form .vem-remove-bar button { float:right; margin-top:16px; }
+.vem-one-occurrence.closed .vem-form { display:none; }
+
+.vem-one-occurrence .vem-form label { display:block; }
+.vem-one-occurrence .vem-form input { padding:0 5px; }
+.vem-one-occurrence .vem-form input[type=text], .vem-one-occurrence .vem-form select { width:100%; margin-bottom: 8px; }
+.vem-one-occurrence .vem-form input.vem-dates-time { width: calc(100% - 70px); margin-top:1px; }
+.vem-one-occurrence .vem-form select.vem-dates-meridian,
+.vem-one-occurrence .vem-form select.vem-dates-gsd-meridian { width: 55px; margin-left:8px; margin-bottom:4px; }
+
+.vem-one-occurrence .vem-form-wrapper>div {
+    width: 100%;
+}
+.vem-one-occurrence .vem-form-wrapper>div {
+    display: flex;
+    justify-content: space-between;
+}
+.vem-one-occurrence .vem-form-wrapper>div>div {
+    width: calc(50% - 8px);
+}
+.vem-one-occurrence .vem-form-terms li { list-style: none; }
+.vem-one-occurrence .vem-form-terms-list {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid rgb(126, 137, 147);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 196px;
+    overflow-y: scroll;
+    border-right-width: 3px;
+}
+.vem-one-occurrence .vem-form-terms-list ul { margin-top:0; }
+.vem-one-occurrence .vem-dates-note { height:140px; }
+.vem-one-occurrence .vem-dates-gsd-detail { display:none; }
+.vem-one-occurrence .vem-dates-gsd-detail p { margin-top: 0; }
+
+.vem-action-bar { background-color: white; padding: 8px 12px; margin: 0 -6px -6px -6px; border-top: 1px solid #eee; }
+.js .meta-box-sortables .postbox .vem-one-occurrence.closed .toggle-indicator:before { content: "\f140"; }
+.js .meta-box-sortables .postbox .vem-one-occurrence.open .toggle-indicator:before { content: "\f142"; }
+
+@media screen and (max-width: 767px) {
+    .vem-one-occurrence .vem-form-wrapper>div {
+        flex-wrap: wrap;
+    }
+    
+    .vem-one-occurrence .vem-form-wrapper>div>div {
+        width: 100%;
+    }
+    
+}
